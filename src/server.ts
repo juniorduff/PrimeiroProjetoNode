@@ -1,6 +1,8 @@
 import express, { json } from 'express';
 // @ts-ignore
 import routes from './routes';
+import './database';
+import 'reflect-metadata';
 
 const app = express();
 app.use(json());
